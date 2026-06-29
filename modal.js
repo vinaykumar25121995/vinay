@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Projects
     function renderProjects() {
-        if (!typeof myProjects !== 'undefined') {
+        if (typeof myProjects !== 'undefined') {
             cardsContainer.innerHTML = myProjects.map(project => `
                 <div class="project-card ${project.featured ? 'featured-card' : ''}">
                     ${project.ribbon ? `<div class="project-ribbon">${project.ribbon}</div>` : ''}
