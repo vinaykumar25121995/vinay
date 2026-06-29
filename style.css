@@ -204,6 +204,18 @@ img {
     gap: 1.5rem;
 }
 
+.header-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .mobile-only-link {
+        display: none !important;
+    }
+}
+
 .nav-link {
     font-family: var(--font-heading);
     color: var(--text-color);

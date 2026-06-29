@@ -1,7 +1,7 @@
 // Modal logic for "My Works" section
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('works-modal');
-    const modalTrigger = document.getElementById('my-works-link');
+    const modalTriggers = document.querySelectorAll('.my-works-link');
     const closeBtn = document.querySelector('.works-modal-close');
     const cardsContainer = document.querySelector('.works-cards-container');
     const statsContainer = document.querySelector('.works-stats-container');
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = ''; // Restore scrolling
     }
 
-    modalTrigger.addEventListener('click', openModal);
+    modalTriggers.forEach(trigger => trigger.addEventListener('click', openModal));
     closeBtn.addEventListener('click', closeModal);
     
     // Close on outside click
