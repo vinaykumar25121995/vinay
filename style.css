@@ -1111,7 +1111,8 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
+    perspective: 1000px;
 }
 
 /* Project Card */
@@ -1124,8 +1125,8 @@ img {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px) rotateX(2deg) rotateY(2deg);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5), -10px 10px 30px rgba(255, 255, 255, 0.05);
 }
 
 .project-card-glass {
@@ -1145,8 +1146,8 @@ img {
 }
 
 .featured-card:hover {
-    transform: scale(1.02) translateY(-5px);
-    box-shadow: 0 20px 40px -10px rgba(74, 222, 128, 0.15);
+    transform: scale(1.02) translateY(-5px) rotateX(2deg) rotateY(-2deg);
+    box-shadow: 0 20px 40px -10px rgba(74, 222, 128, 0.15), 10px 10px 30px rgba(74, 222, 128, 0.1);
 }
 
 .project-ribbon {

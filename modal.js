@@ -64,9 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             </span>
                         </div>
                         <p class="project-desc">${project.description}</p>
-                        <div class="tech-stack">
-                            ${project.technologies.map(tech => `<span class="tech-chip">${tech}</span>`).join('')}
-                        </div>
                         <div class="project-footer">
                             <a href="${project.button.url}" 
                                ${project.button.disabled ? 'disabled' : 'target="_blank" rel="noopener noreferrer"'}
